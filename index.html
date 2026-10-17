@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/logo (1).png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/backward_icon.png" />
+            <img src="./assets/forward_icon.png" class="hide" />
+          </div>
+
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down"></i> Install App
+            </button>
+            <i
+              class="fa-regular fa-user nav-item"
+              style="margin-right: 1rem"
+            ></i>
+          </div>
+        </div>
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played ...</p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card2img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Top 50 - India</p>
+            <p class="card-info">Your daily updates of the most played ...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card3img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Romantic Hits</p>
+            <p class="card-info">Beautiful songs filled with love and emotion.</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card4img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Mass Hits</p>
+            <p class="card-info">Power-packed tracks taking over the charts.</p>
+          </div>
+        </div>
+
+        <!-- <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card5img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played ...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card6img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played ...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played ...</p>
+          </div>
+        </div> -->
+
+        <h2>Popular Artists</h2>
+
+        <div class="cards-container">
+          <div class="artist-card">
+            <img src="./assets/singer1.jpg" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Arijit Singh</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/singer2.webp" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Selena Gomez</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/singer3.webp" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Alan Walker</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/singer4.webp" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Katy Perry</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/singer5.webp" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Aatif Aslam</p>
+            <p class="artist-info">Artist</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+     <h2 class="section-title">Popular albums and singles</h2>
+
+<div class="cards-container">
+  <div class="artist-card">
+    <img src="./assets/popular-album1.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Jab We Met</p>
+    <p class="artist-info">
+      Pritam, Irshad Kamil, Sandesh Shandilya
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/popular-album2.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Jo Tum Mere Ho</p>
+    <p class="artist-info">
+      Anuv Jain
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/popular-album3.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Tum Mile(Original Motion Picture Soundtrack)</p>
+    <p class="artist-info">
+      Pritam
+    </p>
+  </div>
+
+   <div class="artist-card">
+    <img src="./assets/popular-album4.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Hamari Adhuri Kahani (Original Motion Picture...)</p>
+    <p class="artist-info">
+      Jeet Gannguli, Mithoon, Ami Mishra
+    </p>
+  </div>
+
+
+   <div class="artist-card">
+    <img src="./assets/popular-album5.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Ultimate Love Songs - Arijit Singh</p>
+    <p class="artist-info">
+      Arijit Singh
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+        <h2>Best episodes of the week</h2>
+
+        <div class="cards-container">
+          <div class="artist-card">
+            <img src="./assets/episode1.jpg" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Arijit Singh</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/episode2.jpg" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Selena Gomez</p>
+            <p class="artist-info">Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/episode3.jpg" class="artist-img" />
+
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+
+            <p class="artist-title">Alan Walker</p>
+            <p class="artist-info">Artist</p>
+          </div>
+        </div> -->
+        <h2 class="section-title">Best episodes of the week</h2>
+
+<div class="cards-container">
+  <div class="artist-card">
+    <img src="./assets/episode2.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Why The Indian Rupee Is Falling & What Comes Nex...</p>
+    <p class="artist-info">
+      May 27 . 45 min
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/episode1.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Martin Excobari: Trauma, Chaos & Three Industries...</p>
+    <p class="artist-info">
+      May 29 . 94 min
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/episode3.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-title">Episode 69 - What is a Good Life | Can we achiev...</p>
+    <p class="artist-info">
+      May 30 . 18 min
+    </p>
+  </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+      <h2 class="section-title">Popular radio</h2>
+
+<div class="cards-container">
+  <div class="artist-card">
+    <img src="./assets/radio1.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-info">
+      With Jeet Gannguli, Pritam, Shaarib Toshi and more
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/radio2.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-info">
+      With Pritam, Shaarib Toshi, Roop Kumar Rathod and...
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/radio3.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-info">
+      With A.R. Rahman, Arijit Singh, Atif Aslam and more
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/radio4.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-info">
+      With Vinod Rathod, Kumar Sanu, Jatin-Lalit and more
+    </p>
+  </div>
+
+  <div class="artist-card">
+    <img src="./assets/radio5.jpg" alt="" class="episode-img" />
+
+    <div class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <p class="artist-info">
+      With UnniKrishnan, Hariharan, Chinmayi and...
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+   
+
+
+          <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="artist-card">
+            <img src="./assets/chart3.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">Your weekly update of the most played tracks right...</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/chart4.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">Your weekly update of the most played tracks right...</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="./assets/chart1.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">Your daily update of the most played tracks right...</p>
+          </div>
+
+           <div class="artist-card">
+            <img src="./assets/chart2.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">Your daily update of the most played tracks right...</p>
+          </div>
+
+          
+          <!-- <div class="card">
+            <img src="./assets/chart4.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">Hottest Hindi music that India is listening to. Cover -...</p>
+          </div>
+
+          
+          <div class="card">
+            <img src="./assets/chart5.jpg" class="card-img" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <p class="card-info">New Music from Telugu! Cover: Peddi</p>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+        <div class="footer">
+          <div class="line"></div>
+        </div> -->
+
+
+
+
+
+       <footer class="spotify-footer">
+  <div class="footer-links">
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Jobs</a>
+      <a href="#">For the Record</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Communities</h4>
+      <a href="#">For Artists</a>
+      <a href="#">Developers</a>
+      <a href="#">Advertising</a>
+      <a href="#">Investors</a>
+      <a href="#">Vendors</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Useful Links</h4>
+      <a href="#">Support</a>
+      <a href="#">Free Mobile App</a>
+      <a href="#">Popular by Country</a>
+      <a href="#">Import your music</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Spotify Plans</h4>
+      <a href="#">Premium Individual</a>
+      <a href="#">Premium Duo</a>
+      <a href="#">Premium Family</a>
+      <a href="#">Spotify Free</a>
+    </div>
+
+  </div>
+
+  <div class="social-icons">
+    <div class="social-icon">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="social-icon">
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+
+    <div class="social-icon">
+      <i class="fa-brands fa-facebook-f"></i>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>© 2026 Spotify AB</p>
+</div>
+<div class="bottom-gap"></div>
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <img src="./assets/album1.jpg" class="album-img" />
+
+          <div class="song-details">
+            <p class="song-title">Tum Ho Toh</p>
+            <p class="song-artist">Vishal Mishra, Hansika Pareek</p>
+          </div>
+
+          <div class="album-icons">
+            <i class="fa-regular fa-heart album-icon"></i>
+            <i class="fa-solid fa-circle-plus album-icon"></i>
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-control">
+            <img src="./assets/player_icon1.png" class="player-control-icon" />
+            <img src="./assets/player_icon2.png" class="player-control-icon" />
+            <img
+              src="./assets/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./assets/player_icon4.png" class="player-control-icon" />
+            <img src="./assets/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-laptop"></i>
+          <i class="fa-solid fa-volume-high"></i>
+
+          <input
+            type="range"
+            min="0"
+            max="100"
+            class="volume-bar progress-bar"
+          />
+
+          <i class="fa-solid fa-expand"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
